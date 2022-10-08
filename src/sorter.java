@@ -4,14 +4,6 @@ public class Sorter {
     public static void main(String[] args) {
 <<<<<<< HEAD
         System.out.println("Hello World!")
-        Scanner read = new Scanner(System.in);
-        int[] list = new int[6];
-        for (int i = 0; i < 6; i++) {
-            System.out.println("Enter number " + i+1);
-            int x = read.nextInt;
-            list[i] = x;
-        }
-        Collections.sort(list);
 =======
     
         int[] numbers = new int[5];
@@ -24,7 +16,27 @@ public class Sorter {
         for (int i = 0; i < numbers.length; i++) {
             System.out.println(numbers[i]);
         }
+        sortInsertion(numbers);
+        for(int i=0;i<arr.length;++i){
+            System.out.print(numbers[i] + " ");
+        }
         
+    }
+    public static void sortInsertion(int [] sort_arr){
+
+        for(int i=0;i<sort_arr.length;++i){
+
+            int j = i;
+
+            while(j > 0 && sort_arr[j-1]>sort_arr[j]){
+
+                int key = sort_arr[j];
+                sort_arr[j] = sort_arr[j-1];
+                sort_arr[j-1] = key;
+                j = j-1;
+
+            }
+        }
     }
     public static void selectionSort(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
