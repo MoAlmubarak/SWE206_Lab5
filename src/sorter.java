@@ -56,4 +56,9 @@ public class sorter {
             arr[min] = temp;
         }
     }   
-    }
+    public static void sort(int[] arr){
+        selectionSort(arr);
+        for(int i=0; i< arr.length; ++i)
+            System.out.print(arr[i] + " ");
+        }
+}
