@@ -2,19 +2,18 @@ import java.util.*;
 
 public class Sorter {
     public static void main(String[] args) {
-<<<<<<< HEAD
-        System.out.println("Hello World!")
+        System.out.println("Hello World!");
         Scanner read = new Scanner(System.in);
         int[] list = new int[6];
         for (int i = 0; i < 6; i++) {
             System.out.println("Enter number " + i+1);
-            int x = read.nextInt;
+            int x = read.nextInt();
             list[i] = x;
         }
-        Collections.sort(list);
-=======
+
+        //Collections.sort(list);
     
-        int[] numbers = new int[5];
+        int [] numbers = new int[5];
         numbers[0] = 5;
         numbers[1] = 3;
         numbers[2] = 1;
@@ -35,12 +34,8 @@ public class Sorter {
                 }
             }
             int temp = arr[i];
-            
             arr[i] = arr[min];
-
             arr[min] = temp;
         }
-        
->>>>>>> a5f393ea0cf6c2dedde157677a6a389cdc1cf275
+    }   
     }
-}
