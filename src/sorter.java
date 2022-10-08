@@ -3,27 +3,30 @@ import java.util.*;
 public class sorter {
     public static void main(String[] args) {
         System.out.println("Hello World!");
-        int[] list = new int[5];
-        list[0] = 5;
-        list[1] = 3;
-        list[2] = 1;
-        list[3] = 2;
-        list[4] = 4;
 
-        //Collections.sort(list);
         int [] numbers = new int[5];
         numbers[0] = 5;
         numbers[1] = 3;
         numbers[2] = 1;
         numbers[3] = 2;
         numbers[4] = 4;
+
+        int [] numbers2 = new int[5];
+        numbers2[0] = 5;
+        numbers2[1] = 3;
+        numbers2[2] = 1;
+        numbers2[3] = 2;
+        numbers2[4] = 4;
+
         selectionSort(numbers);
+        System.out.println("selectionSort: ");
         for (int i = 0; i < numbers.length; i++) {
-            System.out.println(numbers[i]);
+            System.out.print(numbers[i]+" ");
         }
-        sortInsertion(numbers);
-        for(int i=0; i< list.length; ++i){
-            System.out.print(numbers[i] + " ");
+        sortInsertion(numbers2);
+        System.out.println("sortInsertion: ");
+        for(int i=0; i< numbers2.length; ++i){
+            System.out.print(numbers2[i] + " ");
         }
         
     }
@@ -61,4 +64,11 @@ public class sorter {
         for(int i=0; i< arr.length; ++i)
             System.out.print(arr[i] + " ");
         }
-}
+
+        public static void sort2(int[] arr){
+            sortInsertion(arr);
+            for(int i=0; i< arr.length; ++i)
+                System.out.print(arr[i] + " ");
+            }
+        }
+    
